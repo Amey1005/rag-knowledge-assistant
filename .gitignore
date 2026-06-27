@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# FAISS index (can be large; rebuild from source docs)
+faiss_index/
+
+# Data directory (user's own PDFs — not committed)
+data/
+
+# Gradio temp
+gradio_cached_examples/
+*.gradio/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
