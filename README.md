@@ -1,4 +1,4 @@
-# 🔍 RAG-Based Knowledge Assistant
+#  RAG-Based Knowledge Assistant
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3-green)](https://langchain.com)
@@ -9,21 +9,21 @@ An end-to-end **Retrieval-Augmented Generation (RAG)** pipeline that ingests PDF
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
-| 📄 **Multi-format ingestion** | PDFs, TXT, Markdown via LangChain loaders |
-| 🧩 **Smart chunking** | `RecursiveCharacterTextSplitter` (512 tokens, 64 overlap) |
-| ⚡ **Sub-second retrieval** | FAISS flat index with cosine similarity, top-5 chunks |
-| 🔄 **Swappable embeddings** | OpenAI `text-embedding-3-small` **or** HuggingFace `all-MiniLM-L6-v2` — single config change |
-| 📚 **Cited answers** | Every response includes `[Source: file, Page: n]` references |
-| 🖥️ **Gradio UI** | Zero-setup web interface at `localhost:7860` |
-| 🔧 **CLI mode** | Headless ingest + interactive REPL |
+|  **Multi-format ingestion** | PDFs, TXT, Markdown via LangChain loaders |
+|  **Smart chunking** | `RecursiveCharacterTextSplitter` (512 tokens, 64 overlap) |
+|  **Sub-second retrieval** | FAISS flat index with cosine similarity, top-5 chunks |
+|  **Swappable embeddings** | OpenAI `text-embedding-3-small` **or** HuggingFace `all-MiniLM-L6-v2` — single config change |
+|  **Cited answers** | Every response includes `[Source: file, Page: n]` references |
+|  **Gradio UI** | Zero-setup web interface at `localhost:7860` |
+|  **CLI mode** | Headless ingest + interactive REPL |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 PDFs / Docs
@@ -59,7 +59,7 @@ PDFs / Docs
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & install
 
@@ -104,7 +104,7 @@ python -m src.rag_pipeline
 
 ---
 
-## 🔄 Switching Embedding Providers
+##  Switching Embedding Providers
 
 The pipeline supports two embedding backends with **zero code changes** — just set an environment variable:
 
@@ -118,14 +118,14 @@ EMBEDDING_PROVIDER=huggingface python app.py
 
 | Provider | Model | Requires API key | Latency |
 |---|---|---|---|
-| `openai` | `text-embedding-3-small` | ✅ Yes | ~200ms |
-| `huggingface` | `all-MiniLM-L6-v2` | ❌ No | ~50ms (CPU) |
+| `openai` | `text-embedding-3-small` |  Yes | ~200ms |
+| `huggingface` | `all-MiniLM-L6-v2` | No | ~50ms (CPU) |
 
 > **Note:** You must rebuild the index when switching providers.
 
 ---
 
-## 📊 Performance
+## Performance
 
 Benchmarked on a 10,000-chunk corpus (mixed PDFs):
 
@@ -144,7 +144,7 @@ python scripts/benchmark.py --n 100 --embeddings openai
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 rag-knowledge-assistant/
@@ -163,7 +163,7 @@ rag-knowledge-assistant/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **LangChain** — document loaders, text splitting, retrieval chains
 - **FAISS** — high-performance vector similarity search (Facebook AI)
@@ -174,7 +174,7 @@ rag-knowledge-assistant/
 
 ---
 
-## 🧪 Example Output
+##  Example Output
 
 ```
 You: What is the main argument of Chapter 3?
@@ -189,8 +189,7 @@ predictable power-law relationship with compute budget...
 
 ---
 
-## 📄 License
-
+##  License
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
