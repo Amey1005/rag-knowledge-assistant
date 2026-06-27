@@ -1,9 +1,9 @@
 #  RAG-Based Knowledge Assistant
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
-[![LangChain](https://img.shields.io/badge/LangChain-0.3-green)](https://langchain.com)
-[![FAISS](https://img.shields.io/badge/Vector%20Store-FAISS-orange)](https://github.com/facebookresearch/faiss)
-[![Gradio](https://img.shields.io/badge/UI-Gradio-ff7c00)](https://gradio.app)
+![Python]
+![LangChain]
+![FAISS]
+![Gradio]
 
 An end-to-end **Retrieval-Augmented Generation (RAG)** pipeline that ingests PDFs and documents, chunks and indexes them in FAISS, then answers natural-language queries with **cited source snippets** — all in **< 1 second** on 10k-chunk corpora.
 
